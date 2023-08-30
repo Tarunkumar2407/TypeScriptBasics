@@ -12,13 +12,30 @@
 // }
 // console.log(multiply(4, 5))
 //optional parameter
-function add(a, b, c) {
-    if (c) {
-        return a + b + c;
-    }
-    else {
-        return a + b;
-    }
+// function add(a:number, b:number, c?:number){
+//   if(c){
+//     return a + b + c;
+//   }
+//   else{
+//     return a + b;
+//   }
+// }
+// console.log(add(20,30))
+// console.log(add(20,30,40))
+//default parameter
+// function add(a:number, b:number, c:number=10){
+//   if(c){
+//     return a + b + c;
+//   }
+//   else{
+//     return a + b;
+//   }
+// }
+// console.log(add(20,30))
+// console.log(add(20,30,40))
+//named parameter
+function divide(_a) {
+    var dividend = _a.dividend, divisor = _a.divisor;
+    return dividend / divisor;
 }
-console.log(add(20, 30));
-console.log(add(20, 30, 40));
+console.log(divide({ dividend: 10, divisor: 2 }));
