@@ -44,8 +44,8 @@
 // }
 // console.log(divide({dividend:10, divisor:2}))
 
-type Negate = (value: number) => number;
+// type Negate = (value: number) => number;
 
-// in this function, the parameter `value` automatically gets assigned the type `number` from the type `Negate`
-const negateFunction: Negate = (value) => value * -1;
-console.log(negateFunction(20))
+// // in this function, the parameter `value` automatically gets assigned the type `number` from the type `Negate`
+// const negateFunction: Negate = (value) => value * -1;
+// console.log(negateFunction(20))
