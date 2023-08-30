@@ -39,7 +39,13 @@
 // console.log(add(20,30,40))
 
 //named parameter
-function divide({ dividend, divisor }: { dividend: number, divisor: number }) {
-  return dividend / divisor;
-}
-console.log(divide({dividend:10, divisor:2}))
+// function divide({ dividend, divisor }: { dividend: number, divisor: number }) {
+//   return dividend / divisor;
+// }
+// console.log(divide({dividend:10, divisor:2}))
+
+type Negate = (value: number) => number;
+
+// in this function, the parameter `value` automatically gets assigned the type `number` from the type `Negate`
+const negateFunction: Negate = (value) => value * -1;
+console.log(negateFunction(20))
