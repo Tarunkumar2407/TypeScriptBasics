@@ -1,3 +1,4 @@
+"use strict";
 // let ourTuple: [number, boolean, string] = [10, true, "name"]
 // console.log(ourTuple)
 // console.log(ourTuple[0])
@@ -16,7 +17,7 @@
 // ourTuple.push(false, "sounds good", "readonly")
 // console.log(ourTuple)
 // define our tuple
-var ourTuple;
+let ourTuple;
 // initialize correctly
 // ourTuple = [5, false, 'Coding God was here'];
 // // We have no type safety in our tuple for indexes 3+
@@ -26,5 +27,5 @@ var ourTuple;
 // // throws error as it is readonly.
 // ourReadonlyTuple.push('Coding God took a day off');
 // console.log(ourReadonlyTuple)
-var graph = [55.2, 41.3];
+const graph = [55.2, 41.3];
 console.log(graph);

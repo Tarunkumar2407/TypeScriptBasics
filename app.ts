@@ -9,7 +9,7 @@
 
 // console.log(sum("20", 30))
 
-let num = 20;
-const b = 30;
+// let num = 20;
+// const b = 30;
 
-let c;
+// let c;
